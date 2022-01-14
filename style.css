@@ -27,6 +27,9 @@ body{
     font-size: 1rem;
     cursor: pointer;
 }
+.again-btn:hover, .check-btn:hover{
+    opacity: 0.8;
+}
 .top p{
     font-size: 1rem;
     color: var(--secondary-color);
