@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-     <!-- top bar  -->
+  </head>
+  <body>
+    <!-- top bar  -->
     <div class="top">
-        <button class="again-btn">Again!</button>
-        <p>(Between 1 and 20)</p>
+      <button class="again-btn">Again!</button>
+      <p>(Between 1 and 20)</p>
     </div>
     <!-- Main heading -->
     <div class="heading">
-        <h1>Guess My Number!</h1>
-        <div class="center-line">
-            <div class="left-line"></div>
-            <div><button class="center-line-btn">?</button></div>
-            <div class="right-line"></div>
-        </div>
+      <h1>Guess My Number!</h1>
+      <div class="center-line">
+        <div class="left-line"></div>
+        <div><button class="center-line-btn">?</button></div>
+        <div class="right-line"></div>
+      </div>
     </div>
     <!-- Bottom Part -->
     <div class="bottom">
-        <div class="bottom-left">
-            <div class="box"></div>
-            <div><button class="check-btn">Check!</button></div>
+      <div class="bottom-left">
+        <input type="number" class="box" />
+        <div><button class="check-btn">Check!</button></div>
+      </div>
+      <div class="bottom-right">
+        <h3 class="message">Start guessing...</h3>
+        <div class="stat">
+          <span class="icon">&#128175;</span>
+          <span>Score: <span class="score">20</span></span>
         </div>
-        <div class="bottom-right">
-            <h3>Start guessing...</h3>
-            <div class="stat"> 
-               <span class="icon">&#128175;</span>
-               <span>Score: 20</span>
-            </div>
-            <div class="stat">
-                <span class="icon">&#129351;</span>
-                <span>Highscore: 0</span>
-             </div>
+        <div class="stat">
+          <span class="icon">&#129351;</span>
+          <span>Highscore: <span class="highscore">0</span></span>
         </div>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
