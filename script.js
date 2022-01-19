@@ -1,14 +1,5 @@
 "use strict";
 
-// console.log(document.querySelector(".message").textContent);
-
-// document.querySelector(".message").textContent = "Correct Number! 🎉";
-// document.querySelector(".center-line-btn").textContent = 13;
-// document.querySelector(".score").textContent = 10;
-
-// document.querySelector(".box").value = 33;
-// console.log(document.querySelector(".box").value);
-
 let correctNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
@@ -39,20 +30,11 @@ document.querySelector(".check-btn").addEventListener("click", function () {
       highscore = score;
       document.querySelector(".highscore").textContent = highscore;
     }
-  } else if (guess > correctNumber) {
-    //Too High
+  } else if (guess !== correctNumber) {
+    //Wrong Guess
     if (score > 1) {
-      document.querySelector(".message").textContent = "Too High! 📈";
-      score--;
-      document.querySelector(".score").textContent = score;
-    } else if (score == 1) {
-      document.querySelector(".message").textContent = "You lost the game! 💔";
-      document.querySelector(".score").textContent = 0;
-    }
-  } else if (guess < correctNumber) {
-    //Too Low
-    if (score > 1) {
-      document.querySelector(".message").textContent = "Too low! 📉";
+      document.querySelector(".message").textContent =
+        guess > correctNumber ? "Too high!📈" : "Too low!📉";
       score--;
       document.querySelector(".score").textContent = score;
     } else if (score == 1) {
